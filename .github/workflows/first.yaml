@@ -1,0 +1,10 @@
+name: CI
+on : [push]
+
+
+jobs:
+  run-shell-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print a string
+        run: echo "hello world"
