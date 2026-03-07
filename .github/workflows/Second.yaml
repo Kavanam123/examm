@@ -15,6 +15,6 @@ jobs:
     steps:
        - name: Print keys
          run: |
-           echo "$GITHUB.SHA"
-           echo "$.gitignore"
+           echo "$GITHUB_SHA"
+           cat "$.gitignore"
   
