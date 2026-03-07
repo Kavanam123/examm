@@ -1,0 +1,20 @@
+name: Printing new things
+on: [push]
+
+jobs:
+  Run-commands:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print the linux commands
+        run: |
+          pwd
+          ls -a
+
+  Print-keys:
+    runs-on: ubuntu-latest
+    steps:
+       - name: Print keys
+         run: |
+           echo "$GITHUB.SHA"
+           echo "$.gitignore"
+  
