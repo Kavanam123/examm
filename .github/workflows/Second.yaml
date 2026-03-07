@@ -1,5 +1,8 @@
 name: Printing new things
 on: [push]
+defaults:
+  run:
+    shell: bash
 
 jobs:
   Run-commands:
