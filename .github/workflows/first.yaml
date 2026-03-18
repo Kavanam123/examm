@@ -1,12 +1,6 @@
 name: CI
 on :
   workflow_dispatch:
-    inputs:
-      chosen-os:
-        type: choice
-          options:
-            - cicdframework
-            - ubuntu-latest
 
 
 jobs:
