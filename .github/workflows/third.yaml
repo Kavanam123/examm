@@ -1,20 +1,14 @@
-name: using caching
+name: Simple Manual Workflow
 
 on:
   workflow_dispatch:
-    input:
-      input:
-        use-cache:
-          type: boolean
-          default: true
-          description: "whether to execute cache step"
 
- jobs:
-   version 1:
+jobs:
+  hello_job:
     runs-on: ubuntu-latest
     steps:
-     - name : "checkout code"
-       run: actions/checkout@v3
+      - name: Print a message
+        run: echo "Hello from workflow_dispatch!"
 
       
     
