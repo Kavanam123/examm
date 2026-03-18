@@ -1,0 +1,20 @@
+name: using caching
+
+on:
+  workflow_dispatch:
+    input:
+      input:
+        use-cache:
+          type: boolean
+          default: true
+          description: "whether to execute cache step"
+
+ jobs:
+   version 1:
+    runs-on: ubuntu-latest
+    steps:
+     - name : "checkout code"
+       run: actions/checkout@v3
+
+      
+    
